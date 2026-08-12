@@ -318,7 +318,7 @@ void I_SetPalette(byte *palette)
         uint8_t g = gammatable[usegamma][palette[1]];
         uint8_t b = gammatable[usegamma][palette[2]];
 
-        // Create LVGL 9 color from RGB888
+        
         rgb888_palette[i] = lv_color_make(r, g, b);
 
         palette += 3;
